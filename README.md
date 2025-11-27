@@ -16,13 +16,33 @@ It allows searching for GitHub users, viewing user details, and exploring their 
 ```bash
 git clone https://github.com/nandeshboyz024/git-repo-explorer.git
 cd git-repo-explorer
+````
+
+
+## 🔐 Environment Variables (.env)
+
+The project uses a **.env** file to securely store sensitive values such as the GitHub Personal Access Token.
+
+Create a `.env` file in the project root and add:
+
+```env
+REACT_APP_GITHUB_TOKEN=YOUR_TOKEN_KEY
+```
+
+This token is used for authenticated GitHub API requests and helps increase the rate limit.
+
+---
+
+```bash
 npm install
 npm start
-````
+```
 
 Open [http://localhost:3000](http://localhost:3000) in your browser to view the app.
 
----
+
+
+
 
 ## ⚡ State Management Approach
 
