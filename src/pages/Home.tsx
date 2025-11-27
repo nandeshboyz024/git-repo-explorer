@@ -39,6 +39,8 @@ export default function Home() {
       }
 
       if (newSearch) {
+        setUsers([]);
+        setHasMore(false);
         const newUsers = data.items || [];
         setUsers(newUsers);
         setPage(2);
