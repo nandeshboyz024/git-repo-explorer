@@ -1,0 +1,37 @@
+.filter-container {
+  display: flex;
+  align-items: center;
+  gap: 20px; /* space between language and sort dropdown */
+  margin: 15px 0;
+  flex-wrap: wrap; /* wrap on small screens */
+}
+
+.filter-container label {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  font-size: 0.95rem;
+  color: #fff; /* white text for labels */
+}
+
+.filter-container select {
+  margin-left: 8px;
+  padding: 5px 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 0.95rem;
+  background: #fff;
+  color: #000; /* keep dropdown text black for readability */
+  cursor: pointer;
+  transition: border 0.2s, box-shadow 0.2s;
+}
+
+.filter-container select:hover {
+  border-color: #888;
+}
+
+.filter-container select:focus {
+  outline: none;
+  border-color: #0366d6;
+  box-shadow: 0 0 0 3px rgba(3,102,214,0.2);
+}
